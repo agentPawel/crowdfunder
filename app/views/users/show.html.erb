@@ -12,3 +12,16 @@
     <br>
   </div>
 <% end %>
+
+<h3>My Pledges</h3>
+
+<% @pledges_made.each do |pledge| %>
+Project: <%= pledge.project.title %><br>
+Pledge Amount: <%= pledge.dollar_amount %><br>
+Reward Amount: <%= pledge.r
+Reward Description:
+<br>
+<% end %>
+
+
+<%= @projects_title %>
