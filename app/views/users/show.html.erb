@@ -18,10 +18,7 @@
 <% @pledges_made.each do |pledge| %>
 Project: <%= pledge.project.title %><br>
 Pledge Amount: <%= pledge.dollar_amount %><br>
-Reward Amount: <%= pledge.r
-Reward Description:
+Reward Amount: <%= current_user.rewards.find_by(id: pledge.reward_id).dollar_amount %><br>
+Reward Description: <%= current_user.rewards.find_by(id: pledge.reward_id).description %><br>
 <br>
 <% end %>
-
-
-<%= @projects_title %>
