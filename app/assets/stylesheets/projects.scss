@@ -2,27 +2,60 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-main {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
 }
 
-.project {
+.main_div {
+  width: 700px;
+  height: 250px;
+  margin: 100px auto;
+  border: 2px solid #000;
+  overflow: auto;
+}
+
+.scroll_ul {
+  float: left;
+  margin-top: 25px;
+  margin-right: -999em;
+  white-space: nowrap;
+  list-style: none;
+}
+
+.scroll_li {
+  margin: 15px;
   text-align: center;
-  margin-bottom: 1rem;
-  width: 30%;
-  display: inline-block;
+  float: left;
+  width: 130px;
+}
+
+.project-image {
+  height: 120px;
+}
+
+.project-image > img {
+  height: 100%
 }
 
 .project-link {
   display: block;
   text-decoration: none;
   color: cadetblue;
+  font-weight: bold;
+  color: #000;
 }
 
 .project-title {
   margin-bottom: 0;
+  font-size: 20px;
 }
 
 .project-days-left {
   font-size: 0.75em;
+}
+
+.new_project {
+  text-align: center;
 }
