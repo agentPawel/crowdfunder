@@ -1,0 +1,14 @@
+<h1>This is <%= @user.first_name %>'s page </h1>
+
+<h3>My Projects</h3>
+
+<% @projects_owned.each do |project| %>
+  <div class="owned_projects">
+    Project Title: <%= project.title %><br>
+    Description: <%= project.description %><br>
+    Goal: <%= project.goal %><br>
+    Start Date: <%= project.start_date %><br>
+    End Date: <%= project.end_date %><br>
+    <br>
+  </div>
+<% end %>
