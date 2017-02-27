@@ -3,14 +3,14 @@
 <h3>My Projects</h3>
 
 <% @projects_owned.each do |project| %>
-  <div class="owned_projects">
+  <!-- <div class="owned_projects"> -->
     Project Title: <%= project.title %><br>
     Description: <%= project.description %><br>
     Goal: <%= project.goal %><br>
     Start Date: <%= project.start_date %><br>
     End Date: <%= project.end_date %><br>
     <br>
-  </div>
+  <!-- </div> -->
 <% end %>
 
 <h3>My Pledges and Rewards</h3>
@@ -18,7 +18,12 @@
 <% @pledges_made.each do |pledge| %>
 Project: <%= pledge.project.title %><br>
 Pledge Amount: <%= pledge.dollar_amount %><br>
+<<<<<<< HEAD
 Reward Amount: <%= current_user.rewards.find_by(id: pledge.reward_id).dollar_amount %><br>
 Reward Description: <%= current_user.rewards.find_by(id: pledge.reward_id).description %><br>
+=======
+Reward Amount: <%=  %>
+Reward Description:
+>>>>>>> 3c11c04e9b6f652885919e6763b8819141721e72
 <br>
 <% end %>

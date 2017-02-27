@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+<<<<<<< HEAD
 main {
   text-align: center;
 }
@@ -11,18 +12,62 @@ main {
   margin-bottom: 1rem;
   width: 30%;
   display: inline-block;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+.main_div {
+  width: 700px;
+  height: 250px;
+  margin: 100px auto;
+  border: 2px solid #000;
+  overflow: auto;
+}
+
+.scroll_ul {
+  float: left;
+  margin-top: 25px;
+  margin-right: -999em;
+  white-space: nowrap;
+  list-style: none;
+}
+
+.scroll_li {
+  margin: 15px;
+  text-align: center;
+  float: left;
+  width: 130px;
+}
+
+.project-image {
+  height: 120px;
+}
+
+.project-image > img {
+  height: 100%
+>>>>>>> 3c11c04e9b6f652885919e6763b8819141721e72
 }
 
 .project-link {
   display: block;
   text-decoration: none;
   color: cadetblue;
+  font-weight: bold;
+  color: #000;
 }
 
 .project-title {
   margin-bottom: 0;
+  font-size: 20px;
 }
 
 .project-days-left {
   font-size: 0.75em;
+}
+
+.new_project {
+  text-align: center;
 }
